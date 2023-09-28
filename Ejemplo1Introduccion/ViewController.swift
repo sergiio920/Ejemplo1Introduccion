@@ -43,6 +43,7 @@ class ViewController: UIViewController {
         listaUsuarios.append(usuario)
         
         self.view.makeToast("EMAIL \(email), PASSWORD \(password)")
+        self.view.makeToast("Z")
     }
 }
 
