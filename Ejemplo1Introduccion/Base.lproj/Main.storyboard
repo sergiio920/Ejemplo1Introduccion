@@ -1,24 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Ejemplo1Introduccion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 Veces" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRY-gm-0pg">
+                                <rect key="frame" x="20" y="144" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p3B-Mh-ynd">
+                                <rect key="frame" x="20" y="258" width="374" height="30"/>
+                                <state key="normal" title="PULSA AQUÍ"/>
+                                <connections>
+                                    <action selector="contarClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lwg-gD-b1j"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DTC-Up-YQX">
+                                <rect key="frame" x="20" y="464" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4h-Uo-jbP">
+                                <rect key="frame" x="20" y="682" width="374" height="30"/>
+                                <state key="normal" title="REGISTRAR USUARIO"/>
+                                <connections>
+                                    <action selector="btnRegistrar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zuA-Si-bsc"/>
+                                    <action selector="contarClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Oq-OC-UZA"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jv4-su-VcC">
+                                <rect key="frame" x="20" y="548" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jv4-su-VcC" firstAttribute="top" secondItem="DTC-Up-YQX" secondAttribute="bottom" constant="50" id="0IY-ZO-i7H"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="p3B-Mh-ynd" secondAttribute="trailing" constant="20" id="BH9-kD-LXV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iRY-gm-0pg" secondAttribute="trailing" constant="20" id="C9c-8x-3MD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DTC-Up-YQX" secondAttribute="trailing" constant="20" id="F13-ga-EMI"/>
+                            <constraint firstItem="p3B-Mh-ynd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Fch-3E-OYV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="P4h-Uo-jbP" secondAttribute="trailing" constant="20" id="HFN-ib-VbR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jv4-su-VcC" secondAttribute="trailing" constant="20" id="Jy8-GH-rKg"/>
+                            <constraint firstItem="iRY-gm-0pg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="NCF-7E-5RQ"/>
+                            <constraint firstItem="p3B-Mh-ynd" firstAttribute="top" secondItem="iRY-gm-0pg" secondAttribute="bottom" constant="93" id="Pnd-V8-UTc"/>
+                            <constraint firstItem="DTC-Up-YQX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="TWJ-LV-eBb"/>
+                            <constraint firstItem="P4h-Uo-jbP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Vd4-L2-4j3"/>
+                            <constraint firstItem="P4h-Uo-jbP" firstAttribute="top" secondItem="jv4-su-VcC" secondAttribute="bottom" constant="100" id="ZtO-Xw-ICY"/>
+                            <constraint firstItem="jv4-su-VcC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="j9w-ez-fYd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="P4h-Uo-jbP" secondAttribute="bottom" constant="150" id="jBW-tr-idV"/>
+                            <constraint firstItem="iRY-gm-0pg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="neJ-8r-TQm"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lbResultado" destination="iRY-gm-0pg" id="lP6-Fi-pWY"/>
+                        <outlet property="txtEmail" destination="DTC-Up-YQX" id="pDp-y6-yiG"/>
+                        <outlet property="txtPassword" destination="jv4-su-VcC" id="Ur9-7e-WIs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="103.79464285714285"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
