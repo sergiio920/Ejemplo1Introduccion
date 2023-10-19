@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         lbResultado.text = "\(String (contador)) veces"
     }
     
-    @IBAction func btnRegistrar(_ sender: Any) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let email:String = txtEmail.text!
         let password:String = txtPassword.text!
         
@@ -44,6 +44,12 @@ class ViewController: UIViewController {
         
         self.view.makeToast("EMAIL \(email), PASSWORD \(password)")
         self.view.makeToast("Z")
+        
+        if segue.identifier == "VER" {
+            let destino = segue.destination as! MostrarDatosController
+            destino.usuarioMostar = usuario
+            
+        }
     }
 }
 

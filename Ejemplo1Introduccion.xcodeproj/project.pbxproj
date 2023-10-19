@@ -17,6 +17,7 @@
 		DE900EA62AC575A500BD6E4C /* Ejemplo1IntroduccionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE900EA52AC575A500BD6E4C /* Ejemplo1IntroduccionUITests.swift */; };
 		DE900EB82AC5795900BD6E4C /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE900EB72AC5795900BD6E4C /* Usuario.swift */; };
 		DE900EBE2AC57DF800BD6E4C /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = DE900EBD2AC57DF800BD6E4C /* Toast */; };
+		DEDCA0572AE129F30007BFD8 /* MostrarDatosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDCA0562AE129F30007BFD8 /* MostrarDatosController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		DE900EA52AC575A500BD6E4C /* Ejemplo1IntroduccionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ejemplo1IntroduccionUITests.swift; sourceTree = "<group>"; };
 		DE900EA72AC575A500BD6E4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE900EB72AC5795900BD6E4C /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
+		DEDCA0562AE129F30007BFD8 /* MostrarDatosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostrarDatosController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				DE900E8C2AC575A500BD6E4C /* Assets.xcassets */,
 				DE900E8E2AC575A500BD6E4C /* LaunchScreen.storyboard */,
 				DE900E912AC575A500BD6E4C /* Info.plist */,
+				DEDCA0562AE129F30007BFD8 /* MostrarDatosController.swift */,
 			);
 			path = Ejemplo1Introduccion;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 			files = (
 				DE900EB82AC5795900BD6E4C /* Usuario.swift in Sources */,
 				DE900E882AC575A300BD6E4C /* ViewController.swift in Sources */,
+				DEDCA0572AE129F30007BFD8 /* MostrarDatosController.swift in Sources */,
 				DE900E842AC575A300BD6E4C /* AppDelegate.swift in Sources */,
 				DE900E862AC575A300BD6E4C /* SceneDelegate.swift in Sources */,
 			);

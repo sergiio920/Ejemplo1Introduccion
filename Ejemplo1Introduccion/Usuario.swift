@@ -10,5 +10,4 @@ import Foundation
 struct Usuario {
     var email:String
     var password:String
-    
 }
